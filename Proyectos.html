@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">	<title>Proyectos</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/misestilos.css">
+	<link rel="stylesheet" href="js/jquery-ui.min.css">
+  
+	
+</head>
+<body>
+
+	<!-- Navigation -->
+	<nav class="site-navigation">
+		<div class="site-navigation-inner site-container">
+			<img src="./images/test.png" width="200px" height="80px" alt="site logo">
+			<div class="main-navigation">
+				<ul class="main-navigation__ul">
+					<li><a href="index.html">Homepage</a></li>
+					<li><a href="Proyectos.html">Proyectos</a></li>
+					<li><a href="Formulario.html">Contáctame</a></li>
+					<li><a href="#">Habilidades</a></li>
+					<li><a href="#">Referencias</a></li>
+				</ul>
+			</div>
+			<div id="myBtn" class="burger-container" onclick="myFunction(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			<script>
+				function myFunction(x) {
+					x.classList.toggle("change");
+				}
+			</script>
+
+		</div>
+	</nav>
+	<!-- Navigation end -->
+
+	<!-- Top banner -->
+	<section class="fh5co-top-banner" style="padding-top: 100px;">
+		<div class="top-banner__inner site-container">
+			
+			<div class="top-banner__text">
+				<div class="top-banner__text-up">
+					<h2 class="top-banner__h2">Proyectos</h2>
+				</div>
+				<div id="tabs-5">  
+					<ul>  
+					<li><a href="#tabs-6">Maquina Expendedora</a></li>  
+					<li><a href="#tabs-7">Integración SAP PI</a></li>  
+					<li><a href="#tabs-8">Implementación Factura Eléctronica</a></li> 
+					<li><a href="#tabs-9">Aplicación de escritorio</a></li> 
+					</ul>  
+					<div id="tabs-6">  
+						<h3>Proyecto de Ingeniería de Software 2020</h3>
+						<br>
+						<img id="maquina" src="images/Maquina_dulces.png" width="400px" height="400px" style="border-radius: 50%;"/>
+						<p> El proyecto consistió en generar una aplicación web capáz de administrar las maquinas de dulces para una empresa.</p>
+						<p>Este proyecto a nivel personal es uno de los más dificiles en los que he trabajado ya se implementaron diferentes herramientas como: Angular, .Net Core, Jasper Reports.</p>
+						<p>El proyecto debía generar autenticación por medio de JWT (Java Web Token), tambien debía manejar desde la orden de fabricación de las máquinas hasta la visita del administrador de 
+							máquina para recoger el dinero o reportar algún desperfecto en la misma.
+						</p>
+						<p>También debía incluir reportería de la cantidad de venta generada por estas máquinas hacia los socios comerciales de la empresa.
+						</p>
+
+						<p>Y por último hay que mencionar que este proyecto fue desarrollado aplicando la metodología SCRUM y utilizando Azure DevOps para 
+							toda la documentación.
+							<br>
+							<br>
+							<br>
+							Fecha de Finalización: Julio del 2020.
+						</p>
+					</div>  
+					<div id="tabs-7">  
+					<p>Man said to God --- Why did you make women so beautiful?<br/>  
+						God said to man --- So that you will love them.<br/>  
+						Man said to God --- But why did you make them so dumb?<br/>   
+						God said to man --- So that they will love you.<br/> </p>  
+			
+					</div>  
+					<div id="tabs-8">  
+						<p>" The whole secret of existence is to have no fear."  
+						Buddha</p>  
+			
+					</div>  
+					<div id="tabs-9">  
+						<p>" The whole secret of existence is to have no fear."  
+						Buddha</p>  
+			
+					</div>  
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--<footer class="site-footer">-->
+		<div class="footer-bottom">
+			<div class="site-container footer-bottom-inner">
+				<p>© 2020 Hermes Sotoj | Design by Hermes Sotoj 7690-16-3583 | All rights Reserved.</p>
+				<div class="footer-bottom__img">
+					<img src="./images/social-pinterest.png" alt="footer image">
+					<img src="./images/social-twitter.png" alt="footer image">
+					<img src="./images/social-youtube.png" alt="footer image">
+					<img src="./images/footer-fedex.png" alt="footer image">
+					<img src="./images/footer-dhl.png" alt="footer image">
+				</div>
+			</div>
+		</div>
+	<!--</footer>-->
+	<!-- Footer end -->
+
+	<!-- Scripts -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+
+	<script>  
+		$(function() {
+		   $( "#tabs-5" ).tabs({  
+			  heightStyle:"fill",  
+			  collapsible:true,  
+		   });  
+		});  
+	 </script>  
+
+</body>
+</html>
