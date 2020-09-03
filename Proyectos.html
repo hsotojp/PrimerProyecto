@@ -8,7 +8,8 @@
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/misestilos.css">
 	<link rel="stylesheet" href="js/jquery-ui.min.css">
-  
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+
 	
 </head>
 <body>
@@ -23,7 +24,7 @@
 					<li><a href="Proyectos.html">Proyectos</a></li>
 					<li><a href="Formulario.html">Contáctame</a></li>
 					<li><a href="#">Habilidades</a></li>
-					<li><a href="#">Referencias</a></li>
+					<li><a href="Referencias.html">Referencias</a></li>
 				</ul>
 			</div>
 			<div id="myBtn" class="burger-container" onclick="myFunction(this)">
@@ -98,6 +99,7 @@
 		</div>
 	</section>
 
+
 	<!--<footer class="site-footer">-->
 		<div class="footer-bottom">
 			<div class="site-container footer-bottom-inner">
@@ -127,6 +129,12 @@
 			  collapsible:true,  
 		   });  
 		});  
+
+		$(document).ready( function () {
+			$('#table_id').DataTable();
+		} );
+
+		
 	 </script>  
 
 </body>
