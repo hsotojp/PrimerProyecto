@@ -6,3 +6,9 @@ Realizado por:
   7690-16-3583
   
 # Link del Template: http://freehtml5.co/
+
+# Librerías utilizadas en el proyecto:
+	JQuery
+	JavaScript
+	Slick (Default del template)
+	
