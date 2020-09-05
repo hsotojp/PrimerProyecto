@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="css/misestilos.css">
 	<link rel="stylesheet" href="js/jquery-ui.min.css">
 	
+	<link  rel="icon"   href="images/Logo.png" type="image/png" />
+	
 </head>
 <body>
 
@@ -21,7 +23,7 @@
 					<li><a href="index.html">Homepage</a></li>
 					<li><a href="Proyectos.html">Proyectos</a></li>
 					<li><a href="Formulario.html">Contáctame</a></li>
-					<li><a href="#">Habilidades</a></li>
+					<li><a href="habilidades.html">Habilidades</a></li>
 					<li><a href="Referencias.html">Referencias</a></li>
 				</ul>
 			</div>
@@ -41,24 +43,24 @@
 	<!-- Navigation end -->
 
 	<!-- Top banner -->
-	<section class="fh5co-top-banner" style="padding-top: 100px;">
-		<div class="top-banner__inner site-container">
+	<section class="fh5co-top-banner" style="padding-top: 100px;" style="height: 700px;">
+		<div class="top-banner__inner site-container" >
 			
 			<div class="top-banner__text">
 				<div class="top-banner__text-up">
 					<h2 class="top-banner__h2">Proyectos</h2>
 				</div>
-				<div id="tabs-5">  
+				<div id="tabs-5" style="max-height: 700px;">  
 					<ul>  
 					<li><a href="#tabs-6">Maquina Expendedora</a></li>  
 					<li><a href="#tabs-7">Integración SAP PI</a></li>  
 					<li><a href="#tabs-8">Implementación Factura Eléctronica</a></li> 
 					<li><a href="#tabs-9">Aplicación de escritorio</a></li> 
 					</ul>  
-					<div id="tabs-6">  
+					<div id="tabs-6" style="max-height: 600px;">  
 						<h3>Proyecto de Ingeniería de Software 2020</h3>
 						<br>
-						<img id="maquina" src="images/Maquina_dulces.png" width="400px" height="400px" style="border-radius: 50%;"/>
+						<img class="proyectos" src="images/Maquina_dulces.png"/>
 						<p> El proyecto consistió en generar una aplicación web capáz de administrar las maquinas de dulces para una empresa.</p>
 						<p>Este proyecto a nivel personal es uno de los más dificiles en los que he trabajado ya se implementaron diferentes herramientas como: Angular, .Net Core, Jasper Reports.</p>
 						<p>El proyecto debía generar autenticación por medio de JWT (Java Web Token), tambien debía manejar desde la orden de fabricación de las máquinas hasta la visita del administrador de 
@@ -75,21 +77,68 @@
 							Fecha de Finalización: Julio del 2020.
 						</p>
 					</div>  
-					<div id="tabs-7">  
-					<p>Man said to God --- Why did you make women so beautiful?<br/>  
-						God said to man --- So that you will love them.<br/>  
-						Man said to God --- But why did you make them so dumb?<br/>   
-						God said to man --- So that they will love you.<br/> </p>  
+					<div id="tabs-7" style="max-height: 600px;">  
+						<h3>Proyecto de Integración SAP /PI</h3>
+						<br>
+						<img class="proyectos" src="images/SAP_PI.png"/>
+						<p>El proyecto consistió en integrar el módulo de SAP PI con el sistema SAP ECC.</p>
+						<p>El módulo de SAP PI (SAP Process Integration) por sus siglas en inglés es un módulo de SAP encargado de manejar todas las conexiones de sistemas externos con el sistema 
+							SAP ECC, por medio de una forma nativa, mucho más facil de manejar y con un mejor control del flujo de datos.
+						</p>
+						<p>Dentro del proyecto se me fue encargado generar distintos servicios SOAP desde el sistema SAP ECC para poder tener acceso desde el sistema PI, exportando datos como materiales, clientes, 
+							precios, etc. 
+						</p>
+						<p>Durante el proyecto pude aprender muchos aspectos respecto al manejo de servicios rest, ya que todas las conexiones fueron generadas de esta forma
+						</p>
+
+						<p>Este sistema en la fecha que se implemento fue el primero a nivel Centro América agregando así un alto grado de dificultad.
+							<br>
+							<br>
+							<br>
+							Fecha de Finalización: Noviembre del 2018.
+						</p>
 			
 					</div>  
-					<div id="tabs-8">  
-						<p>" The whole secret of existence is to have no fear."  
-						Buddha</p>  
+					<div id="tabs-8" style="max-height: 600px;">  
+						<h3>Proyecto de Integración Factura Electrónica</h3>
+						<br>
+						<img class="proyectos" src="images/FEL.jpg"/>
+						<p>El proyecto consistió en integrar sistema de firma electrónica para Costa Rica y Colombia.</p>
+						<p>En ambos países el funcionamiento de las firmas electrónicas son muy parecidas ya que consiste en que al momento de realizar una factura esta viaje al sistema certificador
+							firme el documento y luego regrese al sistema SAP para registrar la firma otorgada por el ente certificador.
+						</p>
+						<p>Como recurso ABAP se me encargo la tarea de gestionar las conexiones con el sistema certificador y lograr que la conexión fuera lo más rápida posible ya que al momento de facturar 
+							el cliente no podía esperar mucho tiempo por una factura, en el módulo SAP ha sido uno de los proyectos más complicados y de mayor duración en los que he trabajado. 
+						</p>
+						<p>Durante el proyecto pude aprender muchos aspectos del módulo de facturación y ventas de SAP, al punto de obtener un certificado de Funcional SD Junior.
+						</p>
+
+							<br>
+							<br>
+							<br>
+							Fecha de Finalización: Octubre del 2019.
+						</p>
 			
 					</div>  
-					<div id="tabs-9">  
-						<p>" The whole secret of existence is to have no fear."  
-						Buddha</p>  
+					<div id="tabs-9" style="max-height: 600px;">  
+						<h3>Proyecto de Facturación</h3>
+						<br>
+						<img class="proyectos" src="images/facturacion.jpg"/>
+						<p>El proyecto consistió en generar un sistema de facturación y control de ordenes de mantenimiento de un taller mecánico.</p>
+						<p>Es el primer proyecto que trabaje de forma independiente, aplicando todos los conocimientos aprendidos, como metodologás de desarrollo y levantamiento de software,
+							al ser un proyecto realizado de forma independiente tuve que realizar varias reuniones con el cliente para definir el alcance que debería tener.
+						</p>
+						<p>El proyecto fue realizado en el lenguaje de programación JAVA y utilizando una base de datos MySQL, la aplicación se definió para que se ejecutará en modo cliente servidor, 
+							ya que en el taller solo se cuenta con una computadora. 
+						</p>
+						<p>Durante el proyecto pude aprender muchos aspectos de project manager ya que tuve que gestionar varias reuniones con el cliente para lograr satisfacer las necesidades con el software.
+						</p>
+
+							<br>
+							<br>
+							<br>
+							Fecha de Finalización: Agosto del 2020.
+						</p>  
 			
 					</div>  
 				</div>
@@ -106,8 +155,6 @@
 					<img src="./images/social-pinterest.png" alt="footer image">
 					<img src="./images/social-twitter.png" alt="footer image">
 					<img src="./images/social-youtube.png" alt="footer image">
-					<img src="./images/footer-fedex.png" alt="footer image">
-					<img src="./images/footer-dhl.png" alt="footer image">
 				</div>
 			</div>
 		</div>

@@ -28,21 +28,6 @@ function backward(){
 
 
 
-var imgBanner = document.getElementById("slider");
-imgBanner.addEventListener('mouseover', cambiarImagen);
-imgBanner.addEventListener('mouseout', regresarImagen);
-
-function cambiarImagen(){
-    imgBanner.style.border = "thick solid #000000";
-    document.body.style.cursor = 'pointer';
-}
-
-function regresarImagen(){ 
-    imgBanner.style.border = "none";
-    document.body.style.cursor = 'auto';
-}
-
-
 setInterval('forward()', 3000);
 		
 		// Get the modal

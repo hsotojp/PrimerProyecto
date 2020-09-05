@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="js/jquery-ui.min.css">
   
 	
+	<link  rel="icon"   href="images/Logo.png" type="image/png" />
 </head>
 <body>
 
@@ -59,8 +60,8 @@
 							<input type="number" name="telefono" placeholder="Telefono" >
 						</div>
 						
-						<textarea placeholder="Mensaje"></textarea>
-						<p style="color: antiquewhite;">15 Caracteres</p>
+						<textarea placeholder="Mensaje" id="textarea" onkeyup="cuentaCaracteres()"></textarea>
+						<p id="caracteres" style="color: antiquewhite;">Caracteres: 0</p>
 						<br>
 						<input type="submit" name="submit" value="Enviar" class="submit-button">
 						<input type="submit" name="cancelar" value="Cancelar" class="submit-button">
@@ -92,6 +93,12 @@
 	<script src="js/main.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
 
+	<script>
+		function cuentaCaracteres() {
 
+			var used = $('#textarea').val().length;
+			$('#caracteres').text("Caracteres: "+used);
+		}
+	</script>
 </body>
 </html>
