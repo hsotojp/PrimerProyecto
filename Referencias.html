@@ -27,7 +27,7 @@
 					<li><a href="index.html">Homepage</a></li>
 					<li><a href="Proyectos.html">Proyectos</a></li>
 					<li><a href="Formulario.html">Contáctame</a></li>
-					<li><a href="#">Habilidades</a></li>
+					<li><a href="habilidades.html">Habilidades</a></li>
 					<li><a href="Referencias.html">Referencias</a></li>
 				</ul>
 			</div>
@@ -56,7 +56,7 @@
 				<table id="referencias" class="display" >
 					<thead>
 						<tr>
-							<th>Name</th>
+							<th>Nombre</th>
 							<th>Teléfono</th>
 							<th>Correo electrónico</th>
 							<th>Parentesco</th>
@@ -67,114 +67,114 @@
 							<td>Tiger Nixon</td>
 							<td>4580-2362</td>
 							<td>tiger.nixon@gmail.com</td>
-							<td>61</td>
+							<td>Tío</td>
 						</tr>
 						<tr>
 							<td>Luciana Coronado</td>
 							<td>5480-9668</td>
 							<td>luciana.coronado@hotmail.com</td>
-							<td>61</td>
+							<td>Tía</td>
 						</tr>
 						<tr>
 							<td>Vicent Robledo</td>
 							<td>3558-2114</td>
 							<td>vicent_robledo@gmail.com</td>
-							<td>61</td>
+							<td>Tío</td>
 						</tr>
 						<tr>
 							<td>Eloisa Urbano</td>
 							<td>5412-2332</td>
 							<td>eurbano@gmail.com</td>
-							<td>61</td>
+							<td>Hermana</td>
 						</tr>
 						<tr>
 							<td>Raquel Santodomingo</td>
 							<td>4636-2616</td>
 							<td>raquel.santodomingo@outlook.com</td>
-							<td>61</td>
+							<td>Tía</td>
 						</tr>
 						<tr>
 							<td>Marcelo Ceballos</td>
 							<td>5789-1423</td>
 							<td>marceballos@hotmail.es</td>
-							<td>61</td>
+							<td>Hermano</td>
 						</tr>
 						<tr>
 							<td>Juan David Fuentes</td>
 							<td>5549-1321</td>
 							<td>juanda.fuentes@gmail.com</td>
-							<td>61</td>
+							<td>Primo</td>
 						</tr>
 						<tr>
 							<td>Blanca Acosta</td>
 							<td>5412-8692</td>
 							<td>blancacosta@hotmail.com</td>
-							<td>61</td>
+							<td>Prima</td>
 						</tr>
 						<tr>
 							<td>Bibiana Rosado</td>
 							<td>4118-2020</td>
 							<td>bibiana_rosad@gmail.com</td>
-							<td>61</td>
+							<td>Tía</td>
 						</tr>
 						<tr>
 							<td>Alberto Fernandez</td>
 							<td>3580-1125</td>
 							<td>fernandez.alberto@hotmail.com</td>
-							<td>61</td>
+							<td>Padre</td>
 						</tr>
 						<tr>
 							<td>Pedro Flores</td>
 							<td>4112-2889</td>
 							<td>pflores@gmail.com</td>
-							<td>61</td>
+							<td>Primo</td>
 						</tr>
 						<tr>
 							<td>Paulina Salas</td>
 							<td>5334-1673</td>
 							<td>pulina.salas@hotmail.com</td>
-							<td>61</td>
+							<td>Madre</td>
 						</tr>
 						<tr>
 							<td>Matias Suárez</td>
 							<td>4520-3519</td>
 							<td>mat.suarez@outlook.com</td>
-							<td>61</td>
+							<td>Primo</td>
 						</tr>
 						<tr>
 							<td>Saúl Castellanos</td>
 							<td>3338-8695</td>
 							<td>scastellanos@gmail.com</td>
-							<td>61</td>
+							<td>Tío</td>
 						</tr>
 						<tr>
 							<td>Fernanda Gómez</td>
 							<td>4128-8992</td>
 							<td>fergomez@gmail.com</td>
-							<td>61</td>
+							<td>N/A</td>
 						</tr>
 						<tr>
 							<td>Vinicio López</td>
 							<td>6631-8597</td>
 							<td>vlopez@hotmail.com</td>
-							<td>61</td>
+							<td>N/A</td>
 						</tr>
 						<tr>
 							<td>Miguel Gonzáles</td>
 							<td>2220-0000</td>
 							<td>migonzales@outlook.com</td>
-							<td>61</td>
+							<td>N/A</td>
 						</tr>
 						<tr>
 							<td>Gabriela Juarez</td>
 							<td>5383-4479</td>
 							<td>gajuarez@yahoo.com</td>
-							<td>61</td>
+							<td>N/A</td>
 						</tr>						
 					</tbody>
 					<tfoot>
 						<tr>
-							<th>Name</th>
+							<th>Nombre</th>
 							<th>Teléfono</th>
 							<th>Correo electrónico</th>
 							<th>Parentesco</th>
@@ -214,8 +214,14 @@
 	$(document).ready(function() {
 		$('#referencias').DataTable( {
 			order: [[0, 'asc']],
-			pageLength: 5
-		} );
+			pageLength: 5,
+			responsive: true,
+			language: {
+				url: 'js/es-ar.json'
+			}
+		} 
+		
+		);
 	} );
 
 		

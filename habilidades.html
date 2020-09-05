@@ -2,17 +2,22 @@
 <html lang="es">
 <head>
 	<!-- Required meta tags -->
-	<meta charset="utf-8">	<title>Contáctame</title>
+	<meta charset="utf-8">	<title>Referencias</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/misestilos.css">
+
+	
 	<link rel="stylesheet" href="js/jquery-ui.min.css">
-  
+	<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/dataTables.jqueryui.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/rowgroup/1.1.2/css/rowGroup.jqueryui.min.css">
+
 	
 </head>
 <body>
-
+    
 	<!-- Navigation -->
 	<nav class="site-navigation">
 		<div class="site-navigation-inner site-container">
@@ -39,39 +44,31 @@
 
 		</div>
 	</nav>
-	<!-- Navigation end -->
+    <!-- Navigation end -->
+    
+
+
 
 	<!-- Top banner -->
-	<section class="fh5co-top-banner" style="padding-top: 150px;">
-		<div class="site-container">
-			<div class="footer-inner">
-				<div class="footer-info">
-					<div class="footer-info__left">
-						<img src="./images/footer-img.jpg" alt="Contactame">
-					</div>
+    <section class="fh5co-top-banner" style="padding-top: 100px;">
+		<div class="top-banner__inner site-container">
+			<div class="top-banner__text">
+				<div class="top-banner__text-up">
+					<h2 class="top-banner__h2">Habilidades</h2>
 				</div>
-				<div class="footer-contact-form">
-					<h5>Formulario de Contacto</h5>
-					<form class="contact-form">
-						<div class="contact-form__input">
-							<input type="text" name="name" placeholder="Name">
-							<input type="email" name="email" placeholder="Email">
-							<input type="number" name="telefono" placeholder="Telefono" >
-						</div>
-						
-						<textarea placeholder="Mensaje"></textarea>
-						<p style="color: antiquewhite;">15 Caracteres</p>
-						<br>
-						<input type="submit" name="submit" value="Enviar" class="submit-button">
-						<input type="submit" name="cancelar" value="Cancelar" class="submit-button">
-
-						
-					</form>
-				</div>
-			</div>
+                <div class="banner" style="padding-left: 100px;">
+                    <img id="slider" src="slider/Css.png" alt="">
+                    <br>
+                    <input type="button" value="<" class="submit-button" onClick="backward()">
+                    <input type="button" value=">" class="submit-button" onClick="forward()">
+                </div>
 		</div>
 	</section>
 
+    <div id="myModal" class="modal">
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+          </div>
 	<!--<footer class="site-footer">-->
 		<div class="footer-bottom">
 			<div class="site-container footer-bottom-inner">
@@ -89,9 +86,31 @@
 	<!-- Scripts -->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>
-	<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
+    <script src="slider/slider.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+	<script src="https://cdn.datatables.net/1.10.21/js/dataTables.jqueryui.min.js"></script>
+	<script src="https://cdn.datatables.net/rowgroup/1.1.2/js/dataTables.rowGroup.min.js"></script>
 
+	<script>
+
+	$(document).ready(function() {
+		$('#referencias').DataTable( {
+			order: [[0, 'asc']],
+			pageLength: 5,
+			responsive: true,
+			language: {
+				url: 'js/es-ar.json'
+			}
+		} 
+		
+		);
+	} );
+
+		
+	 </script>  
 
 </body>
 </html>
